@@ -9,13 +9,12 @@ jobs:
   alert:
     runs-on: ubuntu-latest
     steps:
-      - uses: balarangareddys2020/azuresyncDemo
+      - uses: balarangareddys/azuresyncdemo@master
         env:
           ado_token: "${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}"
           github_token: "${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}"
-          ado_organization: "balarangareddys"
-          ado_project: "Azuresyncdemo"
-          ado_area_path: "optional_area_path\\optional_area_path"
+          ado_organization: "balarangareddys2020"
+          ado_project: "AzuresyncDemo"
           ado_wit: "User Story"
           ado_new_state: "New"
           ado_active_state: "Active"
